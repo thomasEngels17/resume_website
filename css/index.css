@@ -19,6 +19,10 @@ body {
     font-weight: 300;
 }
 
+li {
+    list-style-type: none;
+}
+
 h1,
 h2 {
     border-top:2px lightslategray solid;
@@ -36,6 +40,70 @@ h2 {
 
 h3 {
     font-size: 36px;
+}
+
+.iMessage-convo {
+    background-color: white;
+    color: white;
+    margin: 8px;
+    padding: 10px;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.iMessage-convo p {
+    border-radius: 1.15rem;
+    padding: 0.5rem .875rem;
+}
+
+.center {
+    text-align: center;
+    color:grey;
+    font-size: 10px;
+}
+
+/* .parent-to {
+    position: 
+} */
+
+.to {
+    background-color: #1982FC;
+    /* position: relative; */
+    text-align: left;
+    right: 0;
+    align-self: flex-end;
+}
+
+.to-tail:after{
+    /* border-bottom-right-radius: 5px; */
+    border: 2px red solid;
+    content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.from {
+    background-color: #aaa9ad;
+    /* position: relative; */
+    text-align: left;
+    left: 0;
+    align-self: flex-start;
+
+}
+
+.from-tail {
+    border-bottom-left-radius: 25%;
+}
+
+.delivered {
+    color: grey;
+    font-size: 10px;
+    text-align: right;
 }
 
 .title {
@@ -71,6 +139,10 @@ img {
     border-radius: 50%;
 }
 
+.carousel-item p{
+    color: black;
+}
+
 .carousel-item img {
     margin-bottom: 20px;
 }
@@ -90,8 +162,12 @@ a:focus {
     background-color: #9B2915;
 }
 
+.carousel-item a:hover{
+    background-color: transparent;
+}
+
 .github-link {
-    color: white;
+    color: black;
 }
 
 .github-link:hover,
